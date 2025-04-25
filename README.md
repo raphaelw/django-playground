@@ -12,6 +12,7 @@
     - Full Tutorial by Piko: https://youtu.be/aCWd4loTl68
     - https://learndjango.com/tutorials/django-custom-user-model
 - Consider *allauth* library
+- CRSF Tokens & Forms in general
 
 ## Workpointer:
 
