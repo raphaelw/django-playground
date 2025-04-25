@@ -6,9 +6,10 @@
     - It's in Pt. 7 of the Tutorial: https://docs.djangoproject.com/en/5.1/intro/tutorial07/
     - https://realpython.com/customize-django-admin-python/
     - https://testdriven.io/blog/customize-django-admin/
-- Setup a CUSTOM User Model
+- Auth incl. Setup a CUSTOM User Model
     - https://youtu.be/OIC4ounpQjA
     - Video Ref: https://docs.djangoproject.com/en/5.2/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
+    - Full Tutorial by Piko: https://youtu.be/aCWd4loTl68
     - https://learndjango.com/tutorials/django-custom-user-model
 - Consider *allauth* library
 
