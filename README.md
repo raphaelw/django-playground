@@ -70,4 +70,7 @@ urlpatterns = [
 ]
 ```
 
-The `int` part is called *Path Converter*. More Info: https://docs.djangoproject.com/en/5.2/topics/http/urls/#path-converters
+The `int` part is called *Path Converter*. There is also: `str` (default), `slug`, `uuid` and `path`.
+
+More Info: https://docs.djangoproject.com/en/5.2/topics/http/urls/#path-converters
+
