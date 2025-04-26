@@ -1,5 +1,7 @@
 # django-playground
 
+Documenting my first steps learning Python Django
+
 ## TODO
 
 - Customize Django Admin (1:N relation etc.)
@@ -20,39 +22,52 @@
 
 ## The Exploration Log
 
-Start Project
+### Start Project
 
     django-admin startproject mysite .
 
-Run Dev Server
+### Run Dev Server
 
     python manage.py runserver
 
-Create App (must not be located in the project dir structure; it just have to be importable from Python-PATH)
+### Create App
+
+(must not be located in the project dir structure; it just have to be importable from Python-PATH)
 
     python manage.py startapp polls
 
-VSCode: Create launch.json
+### VSCode: Create launch.json
 
 - https://code.visualstudio.com/docs/python/debugging
 - https://code.visualstudio.com/docs/debugtest/debugging-configuration
 
-Init DB
+### Init DB
 
     python manage.py migrate
 
-Generate DB Migration for polls app
+### Generate DB Migration for polls app
 
     python manage.py makemigrations polls
 
-Look at migration SQL statements without execution
+### Look at migration SQL statements without execution
 
     python manage.py sqlmigrate polls 0001
 
-Interactive Shell to wrangle DB data
+### Interactive Shell to wrangle DB data
 
     python manage.py shell
 
-Create THE ADMIN in order to log into admin panel
+### Create THE ADMIN in order to log into admin panel
 
     python manage.py createsuperuser
+
+### URL patterns / Routing / Path
+
+```py
+urlpatterns = [
+    # ex: /polls/5/results/
+    path("<int:question_id>/results/", views.results, name="results"),
+]
+```
+
+The `int` part is called *Path Converter*. More Info: https://docs.djangoproject.com/en/5.2/topics/http/urls/#path-converters
