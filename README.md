@@ -18,7 +18,7 @@ Documenting my first steps learning Python Django
 
 ## Workpointer:
 
-- https://docs.djangoproject.com/en/5.2/intro/tutorial02/
+- https://docs.djangoproject.com/en/5.2/intro/tutorial03/#write-views-that-actually-do-something
 
 ## The Exploration Log
 
