@@ -74,3 +74,16 @@ The `int` part is called *Path Converter*. There is also: `str` (default), `slug
 
 More Info: https://docs.djangoproject.com/en/5.2/topics/http/urls/#path-converters
 
+### Standalone Scripts making use of Django ORM incl. project settings etc.
+
+https://stackoverflow.com/questions/39723310/django-standalone-script
+
+- Approach 1:
+    - https://www.stavros.io/posts/standalone-django-scripts-definitive-guide/
+    - equivalent to importing `wsgi`. see also `misc\standalone_script.py`
+        - in bash: `PYTHONPATH=. python misc/standalone_script.py`
+        - alternative hack: `python -m misc.stanalone_script`
+    - you could also move `standalone_script.py` to the same path as `management.py`. this would automatically solve the PYTHONPATH workarounds from above.
+- Approach 2: (more official and clean)
+    - Custom Management Command: https://docs.djangoproject.com/en/5.2/howto/custom-management-commands/
+
