@@ -87,3 +87,7 @@ https://stackoverflow.com/questions/39723310/django-standalone-script
 - Approach 2: (more official and clean)
     - Custom Management Command: https://docs.djangoproject.com/en/5.2/howto/custom-management-commands/
 
+### Pylint django to get rid of false positive errors
+
+- https://stackoverflow.com/a/47343542
+- https://sqlpey.com/python/solved-how-to-resolve-class-having-no-objects-member-in-django/
