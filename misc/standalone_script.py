@@ -1,7 +1,7 @@
 """
 Note: Execute this script with project root as PYTHONPATH (same path as manage.py)
-in bash: `PYTHONPATH=. python misc/standalone_script.py`
-alternative hack: python -m misc.stanalone_script
+    in bash: `PYTHONPATH=. python misc/standalone_script.py`
+    alternative hack: python -m misc.stanalone_script
 """
 
 from mysite import wsgi # init and load the full django project
