@@ -31,7 +31,6 @@
             "request": "launch",
             "program": "misc${pathSeparator}standalone_script.py",
             "console": "integratedTerminal",
-            "args": ["runserver"],
             "cwd": "${workspaceFolder}",
             "env": {"PYTHONPATH": "${workspaceFolder}"}
         }
