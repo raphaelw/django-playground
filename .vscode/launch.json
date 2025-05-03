@@ -29,10 +29,10 @@
             "name": "Py: Custom Script",
             "type": "debugpy",
             "request": "launch",
-            "program": "misc${pathSeparator}standalone_script.py",
+            "program": "misc/standalone_script.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            "env": {"PYTHONPATH": "${workspaceFolder}"}
+            "env": {"PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"}
         }
     ]
 }
