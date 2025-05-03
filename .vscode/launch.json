@@ -25,7 +25,6 @@
             "cwd": "${workspaceFolder}"
         },
         {
-            // Note that reloading will trigger the debugger
             "name": "Py: Custom Script",
             "type": "debugpy",
             "request": "launch",
