@@ -92,3 +92,8 @@ https://stackoverflow.com/questions/39723310/django-standalone-script
 
 - https://stackoverflow.com/a/47343542
 - https://sqlpey.com/python/solved-how-to-resolve-class-having-no-objects-member-in-django/
+
+### Templates
+
+- How file paths with `{% extends ... %}` work: https://docs.djangoproject.com/en/5.2/ref/templates/builtins/#std-templatetag-extends
+- Extend an overridden template: https://docs.djangoproject.com/en/5.2/howto/overriding-templates/#extending-an-overridden-template
