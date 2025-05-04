@@ -1,6 +1,7 @@
 # from django.shortcuts import render
 
-from django.http import HttpResponse
+from django.http import Http404, HttpResponse
+from django.shortcuts import render
 from django.template import loader
 from django.urls import reverse
 
@@ -11,13 +12,20 @@ from .models import Question
 def index(request):
     latest_question_list = Question.objects.order_by("-pub_date")[:5]
     template = loader.get_template("polls/index.html")
-    context = {"latest_question_list": latest_question_list}
+    context = {
+        "latest_question_list": latest_question_list,
+        "page_title": "All Questions",
+    }
     return HttpResponse(template.render(context, request))
 
 
 def detail(request, question_id):
-    results_url_path = reverse(results, kwargs={"question_id":123})
-    return HttpResponse(f"""You're looking at question {question_id}. Results: {results_url_path}""")
+    try:
+        question = Question.objects.get(pk=question_id)
+    except Question.DoesNotExist:
+        raise Http404("Question does not exist")
+    # or in short: question = get_object_or_404(Question, pk=question_id)
+    return render(request, "polls/detail.html", {"question": question, "page_title": "Question"})
 
 def results(request, question_id):
     response = f"You're looking at the results of question {question_id}."

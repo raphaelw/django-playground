@@ -19,7 +19,7 @@ Documenting my first steps learning Python Django
 
 ## Workpointer:
 
-- https://docs.djangoproject.com/en/5.2/intro/tutorial03/#write-views-that-actually-do-something
+- https://docs.djangoproject.com/en/5.2/intro/tutorial04/
 
 ## The Exploration Log
 
@@ -97,3 +97,7 @@ https://stackoverflow.com/questions/39723310/django-standalone-script
 
 - How file paths with `{% extends ... %}` work: https://docs.djangoproject.com/en/5.2/ref/templates/builtins/#std-templatetag-extends
 - Extend an overridden template: https://docs.djangoproject.com/en/5.2/howto/overriding-templates/#extending-an-overridden-template
+
+### Reverse URLs when having more than one instance of a django app
+
+- https://docs.djangoproject.com/en/5.2/topics/http/urls/#url-namespaces
